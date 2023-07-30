@@ -2,15 +2,12 @@ import React from "react";
 import ListCard from "../components/Listcard.tsx";
 
 export interface IName {
-    name: ICountry
-}
-interface ICountry {
-    common: string
+    name: { common:string }
 }
 
 export interface IInfoCountry {
     country: IInfo
-    
+
 }
 
 export interface IInfo {

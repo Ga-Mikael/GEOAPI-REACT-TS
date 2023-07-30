@@ -17,7 +17,7 @@ export default function ModalContent({country, closeModal}: IInfoCountry) {
                 <h2 className="text-2xl mb-4"> Her is {country.name.common}'s information</h2>
                 <p className="text-lg mb-2">
                     <span className="font-semibold">Languages(s)</span>
-                    : {Object.entries(country.languages).map(lang => lang[1] + " ")}
+                    : {Object.values(country.languages).map(lang => lang + " ")}
                 </p>
                 <p className="text-lg mb-2">
                     <span className="font-semibold">Capital</span> : {country.capital[0]}
